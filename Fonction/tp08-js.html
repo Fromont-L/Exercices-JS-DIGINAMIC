@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 08 - Manipulation du DOM</title>
+
+    <script src="domtom.js" defer></script>
+</head>
+<body>
+    <h1>Exercices pour manipuler le DOM</h1>
+    <h2>Exercice Addition</h2>
+    <form action="POST">
+
+        <label for="test">test</label>
+        <input type="number" id="test" name="test" value="5">
+        <label for="nombre1">Nombre 1 :</label>
+        <input type="number" id="nombre1" name="nombre1"/>
+
+        <label for="nombre2">Nombre 2 :</label>
+        <input type="number" id="nombre2" name="nombre2"/>
+
+        <label for="nombre3">Nombre 3 :</label>
+        <input type="number" id="nombre3" name="nombre3"/>
+    </form>
+
+    <button onclick="addition('nombre1', 'nombre2')">Additionner</button>
+
+    <span id="resultat"></span>
+
+
+    <h2>Exercice Opération</h2>
+    <form action="POST">
+
+        <label for="nombre11">Nombre 1 :</label>
+        <input type="number" id="nombre11" name="nombre11"/>
+
+        <select title="selecteur" name="selecteur" id="selecteur">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+
+        <label for="nombre22">Nombre 2 :</label>
+        <input type="number" id="nombre22" name="nombre22"/>
+
+    </form>
+
+    <button onclick="calculer()">Calculer</button>
+
+    <span id="resultat2"></span>
+
+
+    <h2>Exercice Contrôle Formulaire</h2>
+    <form action="POST">
+
+        <label for="ex3nom">Nom :</label>
+        <input type="text" id="ex3nom" name="ex3nom"/>
+
+        <label for="ex3prenom">Prénom :</label>
+        <input type="text" id="ex3prenom" name="ex3prenom"/>
+
+        <label for="ex3dateNaissance">Date de naissance :</label>
+        <input type="date" id="ex3dateNaissance" name="ex3dateNaissance"/>
+
+    </form>
+
+    <button onclick="validerFormulaire()">Validation</button>
+
+    <div>
+        <span style="background-color:red" id="resultat3"></span>
+    </div>
+
+</body>
+</html>
