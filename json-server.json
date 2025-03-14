@@ -1,0 +1,19 @@
+{
+  "utilisateur": [
+    {
+      "id": "4da3",
+      "nom": "a",
+      "prenom": "a",
+      "genre": "H",
+      "dateNaissance": "1111-11-11",
+      "lieuNaissance": "a",
+      "departementNaissance": "1111",
+      "numeroRue": "1",
+      "libelleRue": "1",
+      "codePostal": "1",
+      "ville": "1",
+      "idCreateur": "lucasfromont",
+      "dateMaj": "03/03/2025 13:44:30"
+    }
+  ]
+}

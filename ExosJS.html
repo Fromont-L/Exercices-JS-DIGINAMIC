@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>JS</h1>
+    <ul>
+        <li>Valeurs primitives</li>
+        <p>On peut stocker dans des variables les Entiers: -2, 6... </br>
+        les Réels: 0.1244, 1.54</br>
+        les strings</br>
+        null</br>
+        undefined</br>
+        </p>
+
+        <li>Déclaration de variables</li>
+        <p>
+
+            ça s'écrit comme ça : let nom = "valeur";
+        </p>
+
+        <li>Les mots clés pour déclarer une variable</li>
+        <p>
+            let: <br>
+            var: hoisting, scope global ou fonction,<br>
+            const: . 
+
+        </p>
+        <li>Les règles évidentes</li>
+        <p>
+            let On ne déclare pas 2 fois la même variable <br>
+            let On ne peut pas appeler une variable avant sa création <br>
+            const On ne modifie jamais une constante <br>
+            var Il faut éviter un max de l'utiliser
+        </p>
+        <li>Les nombres (number)</li>
+        <p>
+            avec console.log(Number.MIN_VALUE); et console.log(Number.MAX_VALUE); <br>
+            on peut voir le nombre min et max (inutile)
+        </p>
+        <li>Les règles évidentes des chaînes de caractères</li>
+        <p>
+            'comme ça' / "C'est comme ça" / `Il a dit : "C'est comme ça"`
+        </p>
+        <li>Les calcules dans les chaînes de caractères</li>
+        <p>
+            Prioriser de mettre les calculs entre parenthèses, comme chez HP.
+        </p>
+        <li>Utilisation des backticks avec variable</li>
+        <p>
+            let ville = 'Nantes'; <br>
+            let ph = `J'habite ${ville}`; <br>
+            console.log(ph)
+        </p>
+        <li>Calculs dans les backticks</li>
+        <p>
+            let a = 1;
+            let b = 14;
+            `Quinze vaut ${a + b}`;
+        </p>
+        <li>Utilisation des variables</li>
+        <p>
+            on déclare "i" d'abord avant de jouer avec <br>
+            let i = 12 <br>
+            i = 2 <br>
+            i = i + i
+        </p>
+        <li>Les noms de variables</li>
+        <p>
+            Toutes les lettres de a à z, chiffres de 0 à 9 (pas au début !) <br>
+            Les caractères $ et _, les caractères unicode <br>
+            Il faut donner un nom logique et qui fait sens 
+        </p>
+        <li>Les opérateurs arithmétiques</li>
+        <p>
+            <p>+ Addition </p>
+            <p>- Soustraction</p>
+            <p>* Multiplication</p>
+            <p>/ Division</p>
+            <p>% Modulo</p>
+            <p>++ Incrémentation</p>
+            <p>-- Décrémentation</p>
+        </p>
+        <li>Opérateurs de comparaison</li>
+        <p>
+            <p>== Égal</p>
+            <p>!= Pas égal</p>
+            <p>= Affectation</p>
+            <p>Comparaison avec vérification des types</p>
+            <p>=== Strictement égal</p>
+            <p>!== Strictement inégal</p>
+        </p>
+        <li>La structure de contrôle if</li>
+        <p>
+            Permet d'éxécuter un bloc de code uniquement si une condition est vraie
+        </p>
+        <li>Opérateurs relationnels</li>
+        <p>
+            Fonctionne avec les nombres et les dates
+            <=
+            >=
+
+        </p>
+        <li>Opérateurs logiques</li>
+        <p>
+            ET, OU, NON
+            && Conjonction (AND)
+            || Disjonction (OR)
+            ! Négation (NOT)
+        </p>
+        <li>Opérateurs d'affectation combiné</li>
+        <p>
+            +=
+            -=
+        </p>
+        <li>Opérateurs conditionnels</li>
+        <p>
+            Opérateur ternaire permettant des choix
+            let x = -2.9;
+            let signe = (x < 0) ? 'true' : 'false';
+            console.log(signe);
+            Déconseillé en terme de lisibilité.
+        </p>
+        <li>Précédence des opérateurs</li>
+        <p>
+            JS sait faire des maths, alors attention à l'ordre de calcul.
+        </p>
+        <li>Ordre de priorité</li>
+        <p>
+            <img src="C:\Users\light\Downloads\tableauOrdrePrioriteJS.png" alt="" style="height: 100px; width: 100px;">
+        </p>
+        <li>Le hoisting</li>
+        <p>
+            ne fonctionne qu'avec les var
+        </p>
+        <li>Les Tableaux</li>
+        <p>
+            let chaines = ['truc0', 'truc1', 'truc2', 'truc3', 'truc4'];
+            console.log(chaines.length); ça affiche le nombre de cases.
+            console.log(chaines[5]); ça fait une erreur car le 6eme élément du tableau n'existe pas
+
+            console.log(chaines[chaines.lenght-1]); permet de parcourir toutes les cases
+            chaines.push("ajouté après le dernier élément") permet d'ajouter
+            chaines.splice(1,1) permet de supprimer 1 élément dans la liste à la 2ème position
+            chaines.slice() permet de dupliquer un tableau mais garde les valeurs à partir du moment où il est déclaré, n'affecte pas les futurs changements
+
+        </p>
+        <li>Les structures de contrôle</li>
+        <p>
+            if (condition) {
+                effet1;
+            } else {
+                effet2;
+            }
+        </p>
+        <p>
+            switch (expression) {
+                case 'a';
+                    console.log(fait un truc);
+                    break;
+            } etc.
+        </p>
+        <p>
+            boucle indexée
+            for (initialisation; condition; incrémentation) {
+                effet;
+            }
+        </p>
+        <p>
+            while et do-while
+            while (condition {
+                instructions
+            })
+            do {
+                instructions;
+            } while (condition);
+        </p>
+        <p>
+            break
+            c'est de la demer d'après le prof Richard
+        </p>
+        <li>
+            Normes de codage
+        </li>
+        <p>
+            lowerCamelCase
+            let unExempleDeNom = "nom";
+            function superficieCercle(r) {
+                return Math.Pi * r * r;
+            }
+
+        </p>
+        <li>Portée des variables</li>
+        <p>
+            Lorsqu'on appelle une variable globale elle retourne un résultat global, si elle a été modifiée dans une condition, à l'intérieur il va donner le résultat qu'il a dans cette boite intérieure.
+            En gros.
+        </p>
+        <li>Les fonctions</li>
+        <p>
+            function superficieCercle(r) {
+                let superficie = Math.PI * Math.pow(r, 2);
+                return superficie;
+            }
+            let superficie = superficieCercle(2.0);
+
+
+            Définition :
+            Mot clé : function
+            Nom de la fonction
+
+        </p>
+        <li>Les méthodes dans les objets litéraux</li>
+        <p>
+            
+        </p>
+        <li></li>
+        <li></li>
+    </ul>
+    
+</body>
+</html>
